@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio Website Design</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .btn:hover {
+  background: var(--secondary-color);
+  color: var(--main-color);
+}
+    </style>
+</head>
+<body>
+    <script src="scripts.js"></script>
+<header class="header">
+    <a href="#home" class="logo">
+        Rahul<i class='bx bxs-hot'></i>
+    </a>
+    <i class='bx-menu-close' id="menu-icon"></i> 
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Rahul R</h1>
+        <h3>And I'm a <span class="blue-text" id="typing-role"></span></h3>
+        <p>I am a passionate developer with strong interests in Backend Development and Data Engineering. I enjoy designing scalable server-side architectures, building robust RESTful APIs, and working with large datasets to extract meaningful insights.</p>
+        <!-- Add your social links or buttons here if needed -->
+         <div class ="social-media">
+            <a href ="https://www.linkedin.com/in/rahulr-" target ="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href ="https://github.com/Rahulfire" target ="_blank"><i class='bx bxl-github'></i></a>
+            <a href ="mailto:rahul2004fire@gmail.com" target ="_blank"><i class='bx bxl-gmail'></i></a>
+            <a href ="https://www.naukri.com/mnjuser/profile?id=&altresid" target ="_blank"><i class='bx bxs-briefcase'></i></a>
+         </div>
+         
+   
+    <a href="https://drive.google.com/file/d/1fkYloj7JkPD0rg3h--WS6QzYCE5NnUiG/view?usp=drive_link" class="btn" target="_blank" download>Download CV</a>
+     </div>
+     <div class ="home-img">
+        <img src ="images\linkdin2_photo-removebg-preview-removebg-preview.png" alt ="">
+     </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-content">
+        <h2 class="heading" style="font-size:3.5rem; font-weight:300; color:#fff;">
+            About <span style="font-weight:400; color:var(--main-color);">ME</span>
+        </h2>
+        <h3 class="blue-text">
+            <span id="about-typing-role"></span>
+        </h3>
+        
+        <p>
+            <ul style="color:#fff; padding-left: 2em; font-size: 1.4rem;">
+                <li>Currently working as an intern at Koch, focusing on API ingestion and integration with the Enterprise Data Lake.</li>
+                <li>Develop automated data pipelines to retrieve, parse, and transform data from external APIs.</li>
+                <li>Leverage AWS Secrets Manager for secure handling of credentials and authentication (OAuth 2.0, API keys).</li>
+                <li>Process complex JSON responses from APIs.</li>
+                <li>Implement robust error handling and retry mechanisms for data workflows.</li>
+            </ul>
+        </p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <h2 class="heading">My <span>Education</span></h2>
+    <div class="education-container">
+        <div class="education-box">
+            <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+            <p>Dayananda Sagar College of Engineeering,<br>2022 - 2025</p>
+            <span class="edu-detail">CGPA: 8.65/10</span>
+        </div>
+        <div class="education-box">
+            <h3>Higher Secondary School</h3>
+            <p>PES Polytechnic, 2019 - 2022</p>
+            <span class="edu-detail">Percentage: 88%</span>
+        </div>
+        <div class="education-box">
+            <h3>Secondary School</h3>
+            <p>Cambridge School, 2018 - 2019</p>
+            <span class="edu-detail">Percentage: 80%</span>
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-container">
+        <div class="skills-box">
+            <h3>Data Engineering</h3>
+            <ul>
+                <li>API Ingestion</li>
+                <li>Python</li>
+                <li>Pyspark</li>
+                <li>SQL &amp; NoSQL Databases</li>
+                <li>ETL Development</li>
+                <li>Data Warehousing</li>
+                
+            </ul>
+        </div>
+        <div class="skills-box">
+            <h3>Backend Developer</h3>
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Django Rest Framework</li>
+                <li>RESTful APIs</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="projects-container">
+        <div class="project-box">
+            <h3>Blog Platform with User Authentication</h3>
+            <p><strong>Tech:</strong> Django, DRF, Python</p>
+            <ul>
+                <li>Implemented user registration and login authentication with secure password management.</li>
+                <li>Developed RESTful CRUD operations for blog posts, comments, tags, and categories.</li>
+                <li>Added search, pagination, and Markdown/image upload support for rich content.</li>
+            </ul>
+        </div>
+        <div class="project-box">
+            <h3>Social Networking Application</h3>
+            <p><strong>Tech:</strong> Django, DRF, PostgreSQL</p>
+            <ul>
+                <li>Developed RESTful APIs for user profiles, friend requests, posts, likes, and comments.</li>
+                <li>Implemented real-time notifications using Django Channels.</li>
+                <li>JWT-based authentication and privacy settings for posts.</li>
+            </ul>
+        </div>
+        <div class="project-box center-project">
+            <h3>Customer Segmentation using Apache Spark</h3>
+            <p><strong>Tech:</strong> PySpark, Machine Learning, Python</p>
+            <ul>
+                <li>Preprocessed and cleaned customer purchase data using Spark DataFrames and SQL.</li>
+                <li>Applied K-Means clustering for customer segmentation.</li>
+                <li>Visualized cluster profiles for actionable marketing insights.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form class="contact-form">
+        <div class="input-group">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-email" style="text-align:center; margin-top:2rem;">
+        <p style="color:#fff;">Or email me directly: 
+            <a href="mailto:rahulfire2004@gmail.com" style="color:var(--main-color);text-decoration:underline;">
+                rahulfire2004@gmail.com
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 Rahul R. All rights reserved.</p>
+</footer>
+</body>
+</html>
